@@ -1,0 +1,19 @@
+.jar-dataflow-preview-info {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 2.5px 0;
+    width: 100%;
+}
+
+.jar-dataflow-preview-info + br {
+    display: none;
+}
+
+.jar-dataflow-preview-info .dataflow-badge {
+    padding-right: 4px;
+}
+
+.jar-dataflow-preview-info .dataflow-smallspacer {
+    width: 4px;
+    display: inline-block;
+}

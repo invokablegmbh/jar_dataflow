@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" date="2021-10-22T12:00:00Z" product-name="jar_dataflow">
+		<header/>
+		<body>
+			<trans-unit id="dataflow" resname="dataflow">
+				<source>Dataflow</source>
+			</trans-unit>
+			<trans-unit id="source" resname="source">
+				<source>Source</source>
+			</trans-unit>
+			<trans-unit id="items" resname="items">
+				<source>Items</source>
+			</trans-unit>
+			<trans-unit id="sysdirs" resname="sysdirs">
+				<source>Folder</source>
+			</trans-unit>
+			<trans-unit id="recursive" resname="recursive">
+				<source>Recursive</source>
+			</trans-unit>
+			<trans-unit id="maxItems" resname="maxItems">
+				<source>Maximum number of elements</source>
+			</trans-unit>
+			<trans-unit id="orderby_field" resname="orderby_field">
+				<source>Sort by Field</source>
+			</trans-unit>
+			<trans-unit id="orderby" resname="orderby">
+				<source>Sort Order</source>
+			</trans-unit>
+			<trans-unit id="category" resname="category">
+				<source>Show only items in the following categories</source>
+			</trans-unit>
+			<trans-unit id="andor" resname="andor">
+				<source>Category and/or linking</source>
+			</trans-unit>
+			<trans-unit id="folder" resname="folder">
+				<source>Folder</source>
+			</trans-unit>
+			<trans-unit id="manual" resname="manual">
+				<source>Manual selection</source>
+			</trans-unit>
+			<trans-unit id="layer_0" resname="layer_0">
+				<source>0 Layers (only the selected page)</source>
+			</trans-unit>
+			<trans-unit id="layer_1" resname="layer_1">
+				<source>1 Layer</source>
+			</trans-unit>
+			<trans-unit id="layer_2" resname="layer_2">
+				<source>2 Layer</source>
+			</trans-unit>
+			<trans-unit id="layer_3" resname="layer_3">
+				<source>3 Layer</source>
+			</trans-unit>
+			<trans-unit id="layer_4" resname="layer_4">
+				<source>4 Layer</source>
+			</trans-unit>
+			<trans-unit id="layer_5" resname="layer_5">
+				<source>5 Layer</source>
+			</trans-unit>
+			<trans-unit id="infinity" resname="infinity">
+				<source>Infinity</source>
+			</trans-unit>
+			<trans-unit id="orlink" resname="orlink">
+				<source>OR operation</source>
+			</trans-unit>
+			<trans-unit id="andlink" resname="andlink">
+				<source>AND operation</source>
+			</trans-unit>
+			<trans-unit id="ascending" resname="ascending">
+				<source>ascending</source>
+			</trans-unit>
+			<trans-unit id="descending" resname="descending">
+				<source>descending</source>
+			</trans-unit>
+			<trans-unit id="manual_selection_none" resname="manual_selection_none">
+				<source>No Items selected</source>
+			</trans-unit>
+			<trans-unit id="manual_selection_singular" resname="manual_selection_singular">
+				<source>Manual selection of 1 Item</source>
+			</trans-unit>
+			<trans-unit id="manual_selection_plural" resname="manual_selection_plural">
+				<source>Manual selection of %d Items</source>
+			</trans-unit>
+			<trans-unit id="no_folder_selected" resname="no_folder_selected">
+				<source>No Directory was selected</source>
+			</trans-unit>
+			<trans-unit id="none_selected" resname="none_selected">
+				<source>No selection made</source>
+			</trans-unit>
+			<trans-unit id="sysdir_ext_all" resname="sysdir_ext_all">
+				<source>All items from the following Directories</source>
+			</trans-unit>
+			<trans-unit id="sysdir_ext_max" resname="sysdir_ext_max">
+				<source>Maximum %s items from the following Directories</source>
+			</trans-unit>
+			<trans-unit id="category_ext" resname="sysdir_ext">
+				<source>Belongs to the following Categories</source>				
+			</trans-unit>
+			<trans-unit id="and" resname="and">
+				<source>and</source>				
+			</trans-unit>
+			<trans-unit id="or" resname="or">
+				<source>or</source>				
+			</trans-unit>
+			<trans-unit id="crdate" resname="crdate">
+				<source>Created Date</source>
+			</trans-unit>
+			<trans-unit id="tstamp" resname="tstamp">
+				<source>Last Modified Date</source>
+			</trans-unit>
+			<trans-unit id="nosorting" resname="nosorting">
+				<source>No Sorting</source>
+			</trans-unit>
+			<trans-unit id="sortby" resname="sortby">
+				<source>sort by</source>
+			</trans-unit>
+			<trans-unit id="default" resname="default">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="backendsorting" resname="backendsorting">
+				<source>Backendsorting</source>
+			</trans-unit>
+			<trans-unit id="creation" resname="creation">
+				<source>Creation</source>
+			</trans-unit>
+			<trans-unit id="items_per_page" resname="items_per_page">
+				<source>Items per Page ("0" deactivates pagination)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,11 @@
+services:
+   _defaults:
+      autowire: true
+      autoconfigure: true
+      public: false
+
+   Jar\Dataflow\:
+      resource: '../Classes/*'
+
+   Jar\Dataflow\Services\DataflowService:
+      public: true
