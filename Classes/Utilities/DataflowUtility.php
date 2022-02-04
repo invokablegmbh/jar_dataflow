@@ -83,10 +83,17 @@ class DataflowUtility
 			]
 		];
 
+		if(!is_array($GLOBALS['TCA']['tt_content']['types'][$cType]['columnsOverrides'])) {
+			$GLOBALS['TCA']['tt_content']['types'][$cType]['columnsOverrides'] = [];
+		}
+
 		ArrayUtility::mergeRecursiveWithOverrule($GLOBALS['TCA']['tt_content']['types'][$cType]['columnsOverrides'], $resultTcaConfig);
 
 		// helper flag for post-handling like backend previews
 		$GLOBALS['TCA']['tt_content']['types'][$cType]['dataflowIsActive'] = true;
+
+		// Activate Categorization for foreign Tables
+		\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::makeCategorizable('jar_dataflow', $foreignTable);
 	}
 
 
