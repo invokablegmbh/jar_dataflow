@@ -38,10 +38,10 @@ class DataflowProcessor implements DataProcessorInterface
      */
     public function process(ContentObjectRenderer $cObj, array $contentObjectConfiguration, array $processorConfiguration, array $processedData)
     {
-        $table = $populatedProcessorConfiguration['table'] ?? 'tt_content';
-        $row = $populatedProcessorConfiguration['row'] ?? $processedData['data'] ?? $processedData;
         $populatedProcessorConfiguration = TypoScriptUtility::populateTypoScriptConfiguration($processorConfiguration, $cObj);
         
+        $table = $populatedProcessorConfiguration['table'] ?? 'tt_content';
+        $row = $populatedProcessorConfiguration['row'] ?? $processedData['data'] ?? $processedData;
 
         $settings = [];
         // reduce the row just to dataflow settings
