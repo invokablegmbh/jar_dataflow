@@ -1,0 +1,44 @@
+./Documentation/Configuration/BackgroundColors.rst:7: WARNING: Title underline too short.
+
+Define Background Colors
+==================
+./Documentation/Configuration/BootstrapGrid.rst:25: WARNING: Title underline too short.
+
+Change via the Constant Editor
+""""""""""""""
+./Documentation/Configuration/BootstrapGrid.rst:28: WARNING: image file not readable: Configuration/../Images/Configuration/constants_grid.png
+./Documentation/Configuration/General.rst:32: WARNING: Explicit markup ends without a blank line; unexpected unindent.
+./Documentation/Configuration/General.rst:33: WARNING: Line block ends without a blank line.
+./Documentation/Configuration/General.rst:22: WARNING: image file not readable: Configuration/../Images/Configuration/configuration_1.png
+./Documentation/Configuration/General.rst:31: WARNING: image file not readable: Configuration/../Images/Configuration/configuration_2.png
+./Documentation/Configuration/General.rst:36: WARNING: image file not readable: Configuration/../Images/Configuration/configuration_3.png
+./Documentation/Configuration/General.rst:46: WARNING: image file not readable: Configuration/../Images/Configuration/configuration_4.png
+./Documentation/Configuration/General.rst:52: WARNING: image file not readable: Configuration/../Images/Configuration/configuration_5.png
+./Documentation/Index.rst:48: WARNING: toctree contains reference to nonexisting document u'Introduction/Index'
+./Documentation/Index.rst:60: WARNING: toctree contains reference to nonexisting document u'Sitemap'
+./Documentation/Index.rst:60: WARNING: toctree contains reference to nonexisting document u'genindex'
+./Documentation/Index.rst:60: WARNING: toctree contains reference to nonexisting document u'About'
+./Documentation/Index.rst:60: WARNING: toctree contains reference to nonexisting document u'Targets'
+./Documentation/QuickStart/Index.rst:6: WARNING: Title underline too short.
+
+Quickstart
+========
+./Documentation/QuickStart/Index.rst:13: WARNING: Title underline too short.
+
+Installation
+----------
+./Documentation/QuickStart/Index.rst:31: WARNING: Title underline too short.
+
+Add Column Row
+------------
+./Documentation/QuickStart/Index.rst:31: WARNING: Title underline too short.
+
+Add Column Row
+------------
+./Documentation/QuickStart/Index.rst:33: WARNING: Inline substitution_reference start-string without end-string.
+./Documentation/QuickStart/Index.rst:37: WARNING: image file not readable: QuickStart/../Images/QuickStart/quick1.png
+./Documentation/QuickStart/Index.rst:44: WARNING: image file not readable: QuickStart/../Images/QuickStart/quick2.png
+./Documentation/QuickStart/Index.rst:49: WARNING: image file not readable: QuickStart/../Images/QuickStart/quick3.png
+./Documentation/QuickStart/Index.rst:52: WARNING: image file not readable: QuickStart/../Images/QuickStart/quick4.png
+./Documentation/Configuration/BackgroundColors.rst:: WARNING: 'class' reference target not found: object
+./Documentation/Configuration/BootstrapGrid.rst:: WARNING: 'class' reference target not found: bool

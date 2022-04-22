@@ -1,0 +1,116 @@
+{
+   "std:confval": {
+      "bootstrapGrid": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/BootstrapGrid.html#confval-bootstrapGrid", 
+         "-"
+      ], 
+      "jar.bgcolors": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/BackgroundColors.html#confval-jar.bgcolors", 
+         "-"
+      ]
+   }, 
+   "std:doc": {
+      "Configuration/BackgroundColors": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/BackgroundColors.html", 
+         "Define Background Colors"
+      ], 
+      "Configuration/BootstrapGrid": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/BootstrapGrid.html", 
+         "Include Bootrap Grid"
+      ], 
+      "Configuration/General": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/General.html", 
+         "General configuration"
+      ], 
+      "Configuration/Index": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/Index.html", 
+         "Configuration"
+      ], 
+      "Index": [
+         "jar_dataflow", 
+         "0.0", 
+         "Index.html", 
+         "JAR Dataflow"
+      ], 
+      "QuickStart/Index": [
+         "jar_dataflow", 
+         "0.0", 
+         "QuickStart/Index.html", 
+         "Quickstart"
+      ]
+   }, 
+   "std:label": {
+      "configuration": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/Index.html#configuration", 
+         "Configuration"
+      ], 
+      "configuration-background-colors": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/BackgroundColors.html#configuration-background-colors", 
+         "Define Background Colors"
+      ], 
+      "configuration-bootstrapgrid": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/BootstrapGrid.html#configuration-bootstrapgrid", 
+         "Include Bootrap Grid"
+      ], 
+      "configuration-general": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/General.html#configuration-general", 
+         "General configuration"
+      ], 
+      "genindex": [
+         "jar_dataflow", 
+         "0.0", 
+         "genindex.html", 
+         "Index"
+      ], 
+      "installation": [
+         "jar_dataflow", 
+         "0.0", 
+         "QuickStart/Index.html#installation", 
+         "Installation"
+      ], 
+      "modindex": [
+         "jar_dataflow", 
+         "0.0", 
+         "py-modindex.html", 
+         "Module Index"
+      ], 
+      "quickstart": [
+         "jar_dataflow", 
+         "0.0", 
+         "QuickStart/Index.html#quickstart", 
+         "Quickstart"
+      ], 
+      "search": [
+         "jar_dataflow", 
+         "0.0", 
+         "search.html", 
+         "Search Page"
+      ], 
+      "start": [
+         "jar_dataflow", 
+         "0.0", 
+         "Index.html#start", 
+         "JAR Dataflow"
+      ]
+   }
+}
