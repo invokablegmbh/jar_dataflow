@@ -8,7 +8,7 @@
     <meta name="docsearch:release" content="1.0.0" />
     <meta name="docsearch:version" content="0.0" />
 
-    <title>Quickstart &mdash; jar_dataflow 1.0.0 documentation</title>
+    <title>Typoscript &mdash; jar_dataflow 1.0.0 documentation</title>
 
     <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/webfonts.css" />
@@ -19,8 +19,9 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="top" title="jar_dataflow 1.0.0 documentation" href="#" />
-    <link rel="next" title="Configuration" href="../Configuration/Index.html" />
-    <link rel="prev" title="JAR Dataflow" href="../Index.html" />
+    <link rel="up" title="Configuration" href="Index.html" />
+    <link rel="next" title="Content Element" href="ContentElement.html" />
+    <link rel="prev" title="TCA Override" href="TCAOverride.html" />
 <!-- /linktags -->
 <!-- extrahead --><!-- /extrahead -->
     <script src="../_static/js/modernizr.min.js"></script>
@@ -82,22 +83,19 @@
                             <div class="toc" role="navigation" aria-label="main navigation">
 <!-- menu -->
                                         <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Configuration/Index.html">Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../Configuration/General.html">General configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Configuration/BootstrapGrid.html">Include Bootrap Grid</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Configuration/BackgroundColors.html">Define Background Colors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Installation/Index.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">Configuration</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="TCAOverride.html">TCA Override</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Typoscript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ContentElement.html">Content Element</a></li>
 </ul>
 </li>
 </ul>
 
                                     <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
                                     <ul>
-<li><a class="reference internal" href="#">Quickstart</a><ul>
-<li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#include-static-template">Include static template</a></li>
-<li><a class="reference internal" href="#add-column-row">Add Column Row</a></li>
-<li><a class="reference internal" href="#configure-element">Configure Element</a></li>
+<li><a class="reference internal" href="#">Typoscript</a><ul>
+<li><a class="reference internal" href="#change-via-the-constant-editor">Change via the Constant Editor</a></li>
 </ul>
 </li>
 </ul>
@@ -110,17 +108,18 @@
                     <div class="rst-content">
 <!-- pager-hidden.html -->
 
-        <a class="no-focus" accesskey="p" href="../Index.html" tabindex="-1"></a>
-        <a class="no-focus" accesskey="n" href="../Configuration/Index.html" tabindex="-1"></a>
+        <a class="no-focus" accesskey="p" href="TCAOverride.html" tabindex="-1"></a>
+        <a class="no-focus" accesskey="n" href="ContentElement.html" tabindex="-1"></a>
 <!-- /pager-hidden.html -->
 <!-- breadcrumbs.html -->
 <div class="breadcrumb-bar" role="navigation" aria-label="breadcrumbs navigation">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../Index.html">Start</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Quickstart</li>
+            <li class="breadcrumb-item"><a href="Index.html">Configuration</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Typoscript</li>
     </ol>
     <div class="breadcrumb-additions">
-        <a class="btn btn-sm btn-light" href="../_sources/QuickStart/Index.rst.txt" rel="nofollow">
+        <a class="btn btn-sm btn-light" href="../_sources/Configuration/Typoscript.rst.txt" rel="nofollow">
             <span class="btn-icon"><span class="fas fa-code"></span></span>
             <span class="btn-text">View source</span>
         </a>
@@ -130,7 +129,7 @@
             <span class="btn-icon"><span class="fas fa-info-circle"></span></span>
             <span class="btn-text">How to edit</span>
         </a>
-        <a class="btn btn-sm btn-primary" id="btnEditOnGitHub" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/edit/main/Documentation/QuickStart/Index.rst" target="_blank">
+        <a class="btn btn-sm btn-primary" id="btnEditOnGitHub" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/edit/main/Documentation/Configuration/Typoscript.rst" target="_blank">
             <span class="btn-icon"><span class="fab fa-github"></span></span>
             <span class="btn-text">Edit on GitHub</span>
         </a>
@@ -140,36 +139,33 @@
                         <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
                             <div itemprop="articleBody">
 <!-- body -->
-    <div class="section" id="quickstart">
-<span id="index-0"></span><span id="id1"></span><h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="installation">
-<span id="id2"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Install the extension jar_dataflow via extension manager or via composer (recommended):</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>composer require jar/jar_dataflow
+    <div class="section" id="typoscript">
+<span id="configuration-typoscript"></span><span id="index-0"></span><h1>Typoscript<a class="headerlink" href="#typoscript" title="Permalink to this headline">¶</a></h1>
+<dl class="confval">
+<dt id="confval-bootstrapGrid">
+<code class="descname">bootstrapGrid</code><a class="headerlink" href="#confval-bootstrapGrid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Default:</th><td class="field-body">true</td>
+</tr>
+</tbody>
+</table>
+<p>If <code class="code php docutils literal notranslate"><span class="pre">true</span></code>, the bootstrap grid css is included for basic grid styling.</p>
+<p>Example:</p>
+<div class="highlight-typoscript notranslate"><div class="highlight"><pre><span></span><span class="nb">plugin</span><span class="p">.</span>tx_jar_columnrow<span class="p">.</span>settings <span class="ss">{</span>
+   bootstrapGrid <span class="o">=</span> true
+<span class="ss">}</span>
 </pre></div>
 </div>
-<p>You can find the current version (and older ones) at</p>
-<p>TBA</p>
-</div>
-<div class="section" id="include-static-template">
-<h2>Include static template<a class="headerlink" href="#include-static-template" title="Permalink to this headline">¶</a></h2>
-<p>In your main template include the static template “Jar Column Row” of the extension jar_dataflow.</p>
-</div>
-<div class="section" id="add-column-row">
-<h2>Add Column Row<a class="headerlink" href="#add-column-row" title="Permalink to this headline">¶</a></h2>
-<p>Navigate to a page with the page module enabled and add a new content element.
-<a href="#id3"><span class="problematic" id="id4">|</span></a>Choose “Column Row” in the new tab “Grids”.</p>
-<img alt="QuickStart/../Images/QuickStart/quick1.png" src="QuickStart/../Images/QuickStart/quick1.png" />
-</div>
-<div class="section" id="configure-element">
-<h2>Configure Element<a class="headerlink" href="#configure-element" title="Permalink to this headline">¶</a></h2>
-<p>You can add new columns in the repeater at the bottom</p>
-<img alt="QuickStart/../Images/QuickStart/quick2.png" src="QuickStart/../Images/QuickStart/quick2.png" />
-<p>In basic view you can now choose the width of each column.
-For example two columns with 50% each.</p>
-<img alt="QuickStart/../Images/QuickStart/quick3.png" src="QuickStart/../Images/QuickStart/quick3.png" />
-<p>After saving and exiting, you can add content elements inside your new column rows either by creating or simply by drag and drop.</p>
-<img alt="QuickStart/../Images/QuickStart/quick4.png" src="QuickStart/../Images/QuickStart/quick4.png" />
+</dd></dl>
+
+<div class="section" id="change-via-the-constant-editor">
+<h2>Change via the Constant Editor<a class="headerlink" href="#change-via-the-constant-editor" title="Permalink to this headline">¶</a></h2>
+<img alt="Configuration/../Images/Configuration/constants_grid.png" src="Configuration/../Images/Configuration/constants_grid.png" />
 </div>
 </div>
 
@@ -180,12 +176,12 @@ For example two columns with 50% each.</p>
 <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
         <li class="page-item">
-            <a class="page-link" href="../Index.html" title="Accesskey Alt(+Shift)+p">
+            <a class="page-link" href="TCAOverride.html" title="Accesskey Alt(+Shift)+p">
                 Previous
             </a>
         </li>
         <li class="page-item">
-            <a class="page-link" href="../Configuration/Index.html" title="Accesskey Alt(+Shift)+n">
+            <a class="page-link" href="ContentElement.html" title="Accesskey Alt(+Shift)+n">
                 Next
             </a>
         </li>
@@ -207,7 +203,7 @@ For example two columns with 50% each.</p>
         <div class="frame-container">
             <div class="frame-inner">
                 <div class="footer-additional">
-                    <p class="text-center">Last rendered: Apr 22, 2022 08:06</p>
+                    <p class="text-center">Last rendered: Apr 22, 2022 12:26</p>
                     <p class="text-center">
                         <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow" target="_blank">
                             TYPO3 Theme 4.6.2

@@ -8,7 +8,7 @@
     <meta name="docsearch:release" content="1.0.0" />
     <meta name="docsearch:version" content="0.0" />
 
-    <title>General configuration &mdash; jar_dataflow 1.0.0 documentation</title>
+    <title>Content Element &mdash; jar_dataflow 1.0.0 documentation</title>
 
     <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/webfonts.css" />
@@ -20,8 +20,7 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="top" title="jar_dataflow 1.0.0 documentation" href="#" />
     <link rel="up" title="Configuration" href="Index.html" />
-    <link rel="next" title="Include Bootrap Grid" href="BootstrapGrid.html" />
-    <link rel="prev" title="Configuration" href="Index.html" />
+    <link rel="prev" title="Typoscript" href="Typoscript.html" />
 <!-- /linktags -->
 <!-- extrahead --><!-- /extrahead -->
     <script src="../_static/js/modernizr.min.js"></script>
@@ -83,23 +82,18 @@
                             <div class="toc" role="navigation" aria-label="main navigation">
 <!-- menu -->
                                         <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../QuickStart/Index.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Installation/Index.html">Installation</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Index.html">Configuration</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">General configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="BootstrapGrid.html">Include Bootrap Grid</a></li>
-<li class="toctree-l2"><a class="reference internal" href="BackgroundColors.html">Define Background Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TCAOverride.html">TCA Override</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Typoscript.html">Typoscript</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Content Element</a></li>
 </ul>
 </li>
 </ul>
 
                                     <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
                                     <ul>
-<li><a class="reference internal" href="#">General configuration</a><ul>
-<li><a class="reference internal" href="#basic">Basic</a></li>
-<li><a class="reference internal" href="#extended">Extended</a></li>
-<li><a class="reference internal" href="#advanced">Advanced</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Content Element</a></li>
 </ul>
 <!-- /menu -->
                             </div>
@@ -110,18 +104,17 @@
                     <div class="rst-content">
 <!-- pager-hidden.html -->
 
-        <a class="no-focus" accesskey="p" href="Index.html" tabindex="-1"></a>
-        <a class="no-focus" accesskey="n" href="BootstrapGrid.html" tabindex="-1"></a>
+        <a class="no-focus" accesskey="p" href="Typoscript.html" tabindex="-1"></a>
 <!-- /pager-hidden.html -->
 <!-- breadcrumbs.html -->
 <div class="breadcrumb-bar" role="navigation" aria-label="breadcrumbs navigation">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../Index.html">Start</a></li>
             <li class="breadcrumb-item"><a href="Index.html">Configuration</a></li>
-        <li class="breadcrumb-item active" aria-current="page">General configuration</li>
+        <li class="breadcrumb-item active" aria-current="page">Content Element</li>
     </ol>
     <div class="breadcrumb-additions">
-        <a class="btn btn-sm btn-light" href="../_sources/Configuration/General.rst.txt" rel="nofollow">
+        <a class="btn btn-sm btn-light" href="../_sources/Configuration/ContentElement.rst.txt" rel="nofollow">
             <span class="btn-icon"><span class="fas fa-code"></span></span>
             <span class="btn-text">View source</span>
         </a>
@@ -131,7 +124,7 @@
             <span class="btn-icon"><span class="fas fa-info-circle"></span></span>
             <span class="btn-text">How to edit</span>
         </a>
-        <a class="btn btn-sm btn-primary" id="btnEditOnGitHub" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/edit/main/Documentation/Configuration/General.rst" target="_blank">
+        <a class="btn btn-sm btn-primary" id="btnEditOnGitHub" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/edit/main/Documentation/Configuration/ContentElement.rst" target="_blank">
             <span class="btn-icon"><span class="fab fa-github"></span></span>
             <span class="btn-text">Edit on GitHub</span>
         </a>
@@ -141,55 +134,35 @@
                         <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
                             <div itemprop="articleBody">
 <!-- body -->
-    <div class="section" id="general-configuration">
-<span id="configuration-general"></span><span id="index-0"></span><h1>General configuration<a class="headerlink" href="#general-configuration" title="Permalink to this headline">¶</a></h1>
+    <div class="section" id="content-element">
+<span id="configuration-content-element"></span><span id="index-0"></span><h1>Content Element<a class="headerlink" href="#content-element" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
-<div class="line">Download the extension and include its static template.</div>
-<div class="line">See: <a class="reference internal" href="../QuickStart/Index.html#installation"><span class="std std-ref">Installation</span></a></div>
+<div class="line">In each grid container one can choose a background color.</div>
+<div class="line">Adding this to the PageTS config adds the possibility to define custom background colors to use exactly the same colors in any grid container.</div>
 </div>
-<div class="section" id="basic">
-<h2>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<dl class="confval">
+<dt id="confval-jar.bgcolors">
+<code class="descname">jar.bgcolors</code><a class="headerlink" href="#confval-jar.bgcolors" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">object</td>
+</tr>
+</tbody>
+</table>
 <div class="line-block">
-<div class="line">Add at least one column via the button <code class="code typoscript docutils literal notranslate"><span class="pre">+Column</span></code>.</div>
-<div class="line">Individual width and an optional css class can be set.</div>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">It’s in the responsibility of the editor to choose the width of each column wisely.</p>
-</div>
-<img alt="Configuration/../Images/Configuration/configuration_1.png" src="Configuration/../Images/Configuration/configuration_1.png" />
-</div>
-<div class="section" id="extended">
-<h2>Extended<a class="headerlink" href="#extended" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line">The extended view can be globally activated for alle columns via the checkbox “Extended column view”.</div>
-<div class="line">For each clumn the width, order (1-9) and offset can be set for 4 breakpoints (mobile, tablet, small- and large desktop)</div>
+<div class="line">Multiple colors can be added to each grid container <code class="code typoscript docutils literal notranslate"><span class="pre">Label</span> <span class="pre">=&gt;</span> <span class="pre">Value</span></code></div>
+<div class="line">Of course either plain labels or <a class="reference external" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Internationalization/XliffFormat.html">XLIFF</a> can be used.</div>
 <div class="line"><br /></div>
 </div>
-<img alt="Configuration/../Images/Configuration/configuration_2.png" src="Configuration/../Images/Configuration/configuration_2.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">Additionally a background color can be set. Either choose a customized hex value or one of the potentially predefined background colors, see <a class="reference internal" href="BackgroundColors.html#configuration-background-colors"><span class="std std-ref">Define Background Colors</span></a>.</div>
-<div class="line"><br /></div>
+<p>Example:</p>
+<div class="highlight-typoscript notranslate"><div class="highlight"><pre><span></span>asdf
+</pre></div>
 </div>
-<img alt="Configuration/../Images/Configuration/configuration_3.png" src="Configuration/../Images/Configuration/configuration_3.png" />
-</div>
-<div class="section" id="advanced">
-<h2>Advanced<a class="headerlink" href="#advanced" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line">Under the tab <code class="code typoscript docutils literal notranslate"><span class="pre">Advanced</span> <span class="pre">Settings</span></code> one can configure the content width and background for the whole row.</div>
-<div class="line">There is also the option of giving an additional css class to the row for individual styling.</div>
-<div class="line"><br /></div>
-</div>
-<img alt="Configuration/../Images/Configuration/configuration_4.png" src="Configuration/../Images/Configuration/configuration_4.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line">For choosing a background there can be chosen a color or a image.</div>
-<div class="line">Both will unlock new fields to set this up.</div>
-<div class="line"><br /></div>
-</div>
-<img alt="Configuration/../Images/Configuration/configuration_5.png" src="Configuration/../Images/Configuration/configuration_5.png" />
-</div>
+</dd></dl>
+
 </div>
 
 <!-- /body -->
@@ -199,16 +172,10 @@
 <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
         <li class="page-item">
-            <a class="page-link" href="Index.html" title="Accesskey Alt(+Shift)+p">
+            <a class="page-link" href="Typoscript.html" title="Accesskey Alt(+Shift)+p">
                 Previous
             </a>
         </li>
-        <li class="page-item">
-            <a class="page-link" href="BootstrapGrid.html" title="Accesskey Alt(+Shift)+n">
-                Next
-            </a>
-        </li>
-        
     </ul>
 </nav>
 <!-- /pager.html -->
@@ -226,7 +193,7 @@
         <div class="frame-container">
             <div class="frame-inner">
                 <div class="footer-additional">
-                    <p class="text-center">Last rendered: Apr 22, 2022 08:06</p>
+                    <p class="text-center">Last rendered: Apr 22, 2022 12:26</p>
                     <p class="text-center">
                         <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow" target="_blank">
                             TYPO3 Theme 4.6.2

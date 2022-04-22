@@ -1,36 +1,54 @@
 {
+   "php:class": {
+      "Jar\\Dataflow\\Utilities\\DataflowUtility": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/TCAOverride.html#Jar\\Dataflow\\Utilities\\DataflowUtility", 
+         "-"
+      ]
+   }, 
+   "php:method": {
+      "Jar\\Dataflow\\Utilities\\DataflowUtility::addDataflowFieldsToContentElement": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/TCAOverride.html#Jar\\Dataflow\\Utilities\\DataflowUtility::addDataflowFieldsToContentElement", 
+         "-"
+      ]
+   }, 
+   "php:namespace": {
+      "Jar\\Dataflow\\Utilities": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/TCAOverride.html#namespace-Jar\\Dataflow\\Utilities", 
+         "-"
+      ]
+   }, 
    "std:confval": {
+      "array$foreignConstraints": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/TCAOverride.html#confval-array$foreignConstraints", 
+         "-"
+      ], 
       "bootstrapGrid": [
          "jar_dataflow", 
          "0.0", 
-         "Configuration/BootstrapGrid.html#confval-bootstrapGrid", 
+         "Configuration/Typoscript.html#confval-bootstrapGrid", 
          "-"
       ], 
       "jar.bgcolors": [
          "jar_dataflow", 
          "0.0", 
-         "Configuration/BackgroundColors.html#confval-jar.bgcolors", 
+         "Configuration/ContentElement.html#confval-jar.bgcolors", 
          "-"
       ]
    }, 
    "std:doc": {
-      "Configuration/BackgroundColors": [
+      "Configuration/ContentElement": [
          "jar_dataflow", 
          "0.0", 
-         "Configuration/BackgroundColors.html", 
-         "Define Background Colors"
-      ], 
-      "Configuration/BootstrapGrid": [
-         "jar_dataflow", 
-         "0.0", 
-         "Configuration/BootstrapGrid.html", 
-         "Include Bootrap Grid"
-      ], 
-      "Configuration/General": [
-         "jar_dataflow", 
-         "0.0", 
-         "Configuration/General.html", 
-         "General configuration"
+         "Configuration/ContentElement.html", 
+         "Content Element"
       ], 
       "Configuration/Index": [
          "jar_dataflow", 
@@ -38,17 +56,29 @@
          "Configuration/Index.html", 
          "Configuration"
       ], 
+      "Configuration/TCAOverride": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/TCAOverride.html", 
+         "TCA Override"
+      ], 
+      "Configuration/Typoscript": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/Typoscript.html", 
+         "Typoscript"
+      ], 
       "Index": [
          "jar_dataflow", 
          "0.0", 
          "Index.html", 
          "JAR Dataflow"
       ], 
-      "QuickStart/Index": [
+      "Installation/Index": [
          "jar_dataflow", 
          "0.0", 
-         "QuickStart/Index.html", 
-         "Quickstart"
+         "Installation/Index.html", 
+         "Installation"
       ]
    }, 
    "std:label": {
@@ -58,23 +88,29 @@
          "Configuration/Index.html#configuration", 
          "Configuration"
       ], 
-      "configuration-background-colors": [
+      "configuration-content-element": [
          "jar_dataflow", 
          "0.0", 
-         "Configuration/BackgroundColors.html#configuration-background-colors", 
-         "Define Background Colors"
+         "Configuration/ContentElement.html#configuration-content-element", 
+         "Content Element"
       ], 
-      "configuration-bootstrapgrid": [
+      "configuration-tcaoverride": [
          "jar_dataflow", 
          "0.0", 
-         "Configuration/BootstrapGrid.html#configuration-bootstrapgrid", 
-         "Include Bootrap Grid"
+         "Configuration/TCAOverride.html#configuration-tcaoverride", 
+         "TCA Override"
       ], 
-      "configuration-general": [
+      "configuration-typoscript": [
          "jar_dataflow", 
          "0.0", 
-         "Configuration/General.html#configuration-general", 
-         "General configuration"
+         "Configuration/Typoscript.html#configuration-typoscript", 
+         "Typoscript"
+      ], 
+      "developers": [
+         "jar_dataflow", 
+         "0.0", 
+         "Configuration/TCAOverride.html#developers", 
+         "For developers"
       ], 
       "genindex": [
          "jar_dataflow", 
@@ -82,23 +118,11 @@
          "genindex.html", 
          "Index"
       ], 
-      "installation": [
-         "jar_dataflow", 
-         "0.0", 
-         "QuickStart/Index.html#installation", 
-         "Installation"
-      ], 
       "modindex": [
          "jar_dataflow", 
          "0.0", 
          "py-modindex.html", 
          "Module Index"
-      ], 
-      "quickstart": [
-         "jar_dataflow", 
-         "0.0", 
-         "QuickStart/Index.html#quickstart", 
-         "Quickstart"
       ], 
       "search": [
          "jar_dataflow", 

@@ -7,7 +7,7 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="0.0" name="docsearch:version"/>
-<title>Include Bootrap Grid — jar_dataflow 1.0.0 documentation</title>
+<title>Installation — jar_dataflow 1.0.0 documentation</title>
 <link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
@@ -17,9 +17,8 @@
 <link href="../genindex.html" rel="index" title="Index"/>
 <link href="../search.html" rel="search" title="Search"/>
 <link href="#" rel="top" title="jar_dataflow 1.0.0 documentation"/>
-<link href="Index.html" rel="up" title="Configuration"/>
-<link href="BackgroundColors.html" rel="next" title="Define Background Colors"/>
-<link href="General.html" rel="prev" title="General configuration"/>
+<link href="../Configuration/Index.html" rel="next" title="Configuration"/>
+<link href="../Index.html" rel="prev" title="JAR Dataflow"/>
 <!-- /linktags -->
 <!-- extrahead --><!-- /extrahead -->
 <script src="../_static/js/modernizr.min.js"></script>
@@ -71,18 +70,18 @@
 <div aria-label="main navigation" class="toc" role="navigation">
 <!-- menu -->
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../QuickStart/Index.html">Quickstart</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Index.html">Configuration</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="General.html">General configuration</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Include Bootrap Grid</a></li>
-<li class="toctree-l2"><a class="reference internal" href="BackgroundColors.html">Define Background Colors</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Configuration/Index.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/TCAOverride.html">TCA Override</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/Typoscript.html">Typoscript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/ContentElement.html">Content Element</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Include Bootrap Grid</a><ul>
-<li><a class="reference internal" href="#change-via-the-constant-editor">Change via the Constant Editor</a></li>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#id2">Installation</a></li>
 </ul>
 </li>
 </ul>
@@ -94,18 +93,17 @@
 <div class="page-main-content">
 <div class="rst-content">
 <!-- pager-hidden.html -->
-<a accesskey="p" class="no-focus" href="General.html" tabindex="-1"></a>
-<a accesskey="n" class="no-focus" href="BackgroundColors.html" tabindex="-1"></a>
+<a accesskey="p" class="no-focus" href="../Index.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="../Configuration/Index.html" tabindex="-1"></a>
 <!-- /pager-hidden.html -->
 <!-- breadcrumbs.html -->
 <div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../Index.html">Start</a></li>
-<li class="breadcrumb-item"><a href="Index.html">Configuration</a></li>
-<li aria-current="page" class="breadcrumb-item active">Include Bootrap Grid</li>
+<li aria-current="page" class="breadcrumb-item active">Installation</li>
 </ol>
 <div class="breadcrumb-additions">
-<a class="btn btn-sm btn-light" href="../_sources/Configuration/BootstrapGrid.rst.txt" rel="nofollow">
+<a class="btn btn-sm btn-light" href="../_sources/Installation/Index.rst.txt" rel="nofollow">
 <span class="btn-icon"><span class="fas fa-code"></span></span>
 <span class="btn-text">View source</span>
 </a>
@@ -113,7 +111,7 @@
 <span class="btn-icon"><span class="fas fa-info-circle"></span></span>
 <span class="btn-text">How to edit</span>
 </a>
-<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/edit/main/Documentation/Configuration/BootstrapGrid.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/edit/main/Documentation/Installation/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
 <span class="btn-icon"><span class="fab fa-github"></span></span>
 <span class="btn-text">Edit on GitHub</span>
 </a>
@@ -123,32 +121,16 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div itemprop="articleBody">
 <!-- body -->
-<div class="section" id="include-bootrap-grid">
-<span id="configuration-bootstrapgrid"></span><span id="index-0"></span><h1>Include Bootrap Grid<a class="headerlink" href="#include-bootrap-grid" title="Permalink to this headline">¶</a></h1>
-<dl class="confval">
-<dt id="confval-bootstrapGrid">
-<code class="descname">bootstrapGrid</code><a class="headerlink" href="#confval-bootstrapGrid" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name"/>
-<col class="field-body"/>
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Default:</th><td class="field-body">true</td>
-</tr>
-</tbody>
-</table>
-<p>If <code class="code php docutils literal notranslate"><span class="pre">true</span></code>, the bootstrap grid css is included for basic grid styling.</p>
-<p>Example:</p>
-<div class="highlight-typoscript notranslate"><div class="highlight"><pre><span></span><span class="nb">plugin</span><span class="p">.</span>tx_jar_columnrow<span class="p">.</span>settings <span class="ss">{</span>
-   bootstrapGrid <span class="o">=</span> true
-<span class="ss">}</span>
+<div class="section" id="installation">
+<span id="index-0"></span><span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<span id="id3"></span><h2>Installation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Install the extension jar_dataflow via extension manager or via composer (recommended):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>composer require jar/jar_dataflow
 </pre></div>
 </div>
-</dd></dl>
-<div class="section" id="change-via-the-constant-editor">
-<h2>Change via the Constant Editor<a class="headerlink" href="#change-via-the-constant-editor" title="Permalink to this headline">¶</a></h2>
-<img alt="Configuration/../Images/Configuration/constants_grid.png" src="Configuration/../Images/Configuration/constants_grid.png"/>
+<p>You can find the current version (and older ones) at</p>
+<p>TBA</p>
 </div>
 </div>
 <!-- /body -->
@@ -158,12 +140,12 @@
 <nav aria-label="Page navigation example">
 <ul class="pagination justify-content-center">
 <li class="page-item">
-<a class="page-link" href="General.html" title="Accesskey Alt(+Shift)+p">
+<a class="page-link" href="../Index.html" title="Accesskey Alt(+Shift)+p">
                 Previous
             </a>
 </li>
 <li class="page-item">
-<a class="page-link" href="BackgroundColors.html" title="Accesskey Alt(+Shift)+n">
+<a class="page-link" href="../Configuration/Index.html" title="Accesskey Alt(+Shift)+n">
                 Next
             </a>
 </li>
@@ -181,7 +163,7 @@
 <div class="frame-container">
 <div class="frame-inner">
 <div class="footer-additional">
-<p class="text-center">Last rendered: Apr 22, 2022 08:06</p>
+<p class="text-center">Last rendered: Apr 22, 2022 12:26</p>
 <p class="text-center">
 <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
                             TYPO3 Theme 4.6.2

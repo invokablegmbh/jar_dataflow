@@ -1,6 +1,6 @@
 {
-  "build_time": "2022-04-22 08:06:06",
-  "checksum": "5a90193ef3938ee89910db1ad9746802",
+  "build_time": "2022-04-22 12:26:07",
+  "checksum": "1f196c3defbeedb8e6fa30ac40c6485e",
   "checksum_ttl_seconds": 604800,
   "copyright": "by JAR Dataflow",
   "created": {
@@ -25,11 +25,11 @@
   "has_neutralized_images": 0,
   "has_neutralized_links": 0,
   "localization": "default",
-  "postprocessed_html_files": 8,
+  "postprocessed_html_files": 9,
   "project": "jar_dataflow",
   "publish_dir": "project/0.0.0",
   "release": "1.0.0",
-  "sitemap_files_html_count": 8,
+  "sitemap_files_html_count": 9,
   "ter_extension": "0",
   "theme_info": {
     "build_mtime": "1626871584",

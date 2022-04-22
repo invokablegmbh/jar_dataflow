@@ -1,9 +1,9 @@
 .. include:: /Includes.rst.txt
 .. highlight:: typoscript
-.. index:: Background Colors
-.. _configuration-background-colors:
+.. index:: Content Element
+.. _configuration-content-element:
 
-Define Background Colors
+Content Element
 ==================
 
 | In each grid container one can choose a background color.

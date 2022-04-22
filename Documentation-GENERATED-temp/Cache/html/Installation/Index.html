@@ -8,7 +8,7 @@
     <meta name="docsearch:release" content="1.0.0" />
     <meta name="docsearch:version" content="0.0" />
 
-    <title>Define Background Colors &mdash; jar_dataflow 1.0.0 documentation</title>
+    <title>Installation &mdash; jar_dataflow 1.0.0 documentation</title>
 
     <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/webfonts.css" />
@@ -19,8 +19,8 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="top" title="jar_dataflow 1.0.0 documentation" href="#" />
-    <link rel="up" title="Configuration" href="Index.html" />
-    <link rel="prev" title="Include Bootrap Grid" href="BootstrapGrid.html" />
+    <link rel="next" title="Configuration" href="../Configuration/Index.html" />
+    <link rel="prev" title="JAR Dataflow" href="../Index.html" />
 <!-- /linktags -->
 <!-- extrahead --><!-- /extrahead -->
     <script src="../_static/js/modernizr.min.js"></script>
@@ -82,18 +82,21 @@
                             <div class="toc" role="navigation" aria-label="main navigation">
 <!-- menu -->
                                         <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../QuickStart/Index.html">Quickstart</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Index.html">Configuration</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="General.html">General configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="BootstrapGrid.html">Include Bootrap Grid</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Define Background Colors</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Configuration/Index.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/TCAOverride.html">TCA Override</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/Typoscript.html">Typoscript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Configuration/ContentElement.html">Content Element</a></li>
 </ul>
 </li>
 </ul>
 
                                     <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
                                     <ul>
-<li><a class="reference internal" href="#">Define Background Colors</a></li>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#id2">Installation</a></li>
+</ul>
+</li>
 </ul>
 <!-- /menu -->
                             </div>
@@ -104,17 +107,17 @@
                     <div class="rst-content">
 <!-- pager-hidden.html -->
 
-        <a class="no-focus" accesskey="p" href="BootstrapGrid.html" tabindex="-1"></a>
+        <a class="no-focus" accesskey="p" href="../Index.html" tabindex="-1"></a>
+        <a class="no-focus" accesskey="n" href="../Configuration/Index.html" tabindex="-1"></a>
 <!-- /pager-hidden.html -->
 <!-- breadcrumbs.html -->
 <div class="breadcrumb-bar" role="navigation" aria-label="breadcrumbs navigation">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../Index.html">Start</a></li>
-            <li class="breadcrumb-item"><a href="Index.html">Configuration</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Define Background Colors</li>
+        <li class="breadcrumb-item active" aria-current="page">Installation</li>
     </ol>
     <div class="breadcrumb-additions">
-        <a class="btn btn-sm btn-light" href="../_sources/Configuration/BackgroundColors.rst.txt" rel="nofollow">
+        <a class="btn btn-sm btn-light" href="../_sources/Installation/Index.rst.txt" rel="nofollow">
             <span class="btn-icon"><span class="fas fa-code"></span></span>
             <span class="btn-text">View source</span>
         </a>
@@ -124,7 +127,7 @@
             <span class="btn-icon"><span class="fas fa-info-circle"></span></span>
             <span class="btn-text">How to edit</span>
         </a>
-        <a class="btn btn-sm btn-primary" id="btnEditOnGitHub" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/edit/main/Documentation/Configuration/BackgroundColors.rst" target="_blank">
+        <a class="btn btn-sm btn-primary" id="btnEditOnGitHub" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/edit/main/Documentation/Installation/Index.rst" target="_blank">
             <span class="btn-icon"><span class="fab fa-github"></span></span>
             <span class="btn-text">Edit on GitHub</span>
         </a>
@@ -134,35 +137,17 @@
                         <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
                             <div itemprop="articleBody">
 <!-- body -->
-    <div class="section" id="define-background-colors">
-<span id="configuration-background-colors"></span><span id="index-0"></span><h1>Define Background Colors<a class="headerlink" href="#define-background-colors" title="Permalink to this headline">¶</a></h1>
-<div class="line-block">
-<div class="line">In each grid container one can choose a background color.</div>
-<div class="line">Adding this to the PageTS config adds the possibility to define custom background colors to use exactly the same colors in any grid container.</div>
-</div>
-<hr class="docutils" />
-<dl class="confval">
-<dt id="confval-jar.bgcolors">
-<code class="descname">jar.bgcolors</code><a class="headerlink" href="#confval-jar.bgcolors" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">object</td>
-</tr>
-</tbody>
-</table>
-<div class="line-block">
-<div class="line">Multiple colors can be added to each grid container <code class="code typoscript docutils literal notranslate"><span class="pre">Label</span> <span class="pre">=&gt;</span> <span class="pre">Value</span></code></div>
-<div class="line">Of course either plain labels or <a class="reference external" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Internationalization/XliffFormat.html">XLIFF</a> can be used.</div>
-<div class="line"><br /></div>
-</div>
-<p>Example:</p>
-<div class="highlight-typoscript notranslate"><div class="highlight"><pre><span></span>asdf
+    <div class="section" id="installation">
+<span id="index-0"></span><span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<span id="id3"></span><h2>Installation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Install the extension jar_dataflow via extension manager or via composer (recommended):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>composer require jar/jar_dataflow
 </pre></div>
 </div>
-</dd></dl>
-
+<p>You can find the current version (and older ones) at</p>
+<p>TBA</p>
+</div>
 </div>
 
 <!-- /body -->
@@ -172,10 +157,16 @@
 <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-center">
         <li class="page-item">
-            <a class="page-link" href="BootstrapGrid.html" title="Accesskey Alt(+Shift)+p">
+            <a class="page-link" href="../Index.html" title="Accesskey Alt(+Shift)+p">
                 Previous
             </a>
         </li>
+        <li class="page-item">
+            <a class="page-link" href="../Configuration/Index.html" title="Accesskey Alt(+Shift)+n">
+                Next
+            </a>
+        </li>
+        
     </ul>
 </nav>
 <!-- /pager.html -->
@@ -193,7 +184,7 @@
         <div class="frame-container">
             <div class="frame-inner">
                 <div class="footer-additional">
-                    <p class="text-center">Last rendered: Apr 22, 2022 08:06</p>
+                    <p class="text-center">Last rendered: Apr 22, 2022 12:26</p>
                     <p class="text-center">
                         <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow" target="_blank">
                             TYPO3 Theme 4.6.2

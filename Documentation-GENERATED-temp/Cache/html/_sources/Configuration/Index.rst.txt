@@ -10,7 +10,7 @@ Configuration
    :maxdepth: 5
    :titlesonly:
 
-   General
-   BootstrapGrid
-   BackgroundColors
+   TCAOverride
+   Typoscript
+   ContentElement
 

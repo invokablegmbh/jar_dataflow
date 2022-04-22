@@ -2,10 +2,10 @@
 .. highlight:: typoscript
 .. index:: Include Bootrap Grid
 
-.. _configuration-bootstrapgrid:
+.. _configuration-typoscript:
 
 =====================
-Include Bootrap Grid
+Typoscript
 =====================
 
 .. confval:: bootstrapGrid

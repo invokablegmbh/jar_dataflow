@@ -1,8 +1,9 @@
-Configuration/BackgroundColors.html
-Configuration/BootstrapGrid.html
-Configuration/General.html
+Configuration/ContentElement.html
 Configuration/Index.html
+Configuration/TCAOverride.html
+Configuration/Typoscript.html
 Index.html
-QuickStart/Index.html
+Installation/Index.html
 genindex.html
+php-modindex.html
 search.html

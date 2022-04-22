@@ -19,7 +19,7 @@ JAR Dataflow
    en
 
 :Description:
-   
+   Add dataflow to any content element to get all items of any table with constraints of your choosing.
 
 :Authors:
    Julian Lichte, Maurice Möllmer
@@ -28,7 +28,7 @@ JAR Dataflow
    typo3jardataflow@jcdn.de
 
 :License:
-   `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__ .
+   `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__ 
 
 **TYPO3**
 
@@ -53,7 +53,7 @@ If you find an error or something is missing, please:
 .. toctree::
    :maxdepth: 3
 
-   QuickStart/Index
+   Installation/Index
    Configuration/Index
 
 
