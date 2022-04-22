@@ -81,10 +81,7 @@
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Typoscript</a><ul>
-<li><a class="reference internal" href="#change-via-the-constant-editor">Change via the Constant Editor</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Typoscript</a></li>
 </ul>
 <!-- /menu -->
 </div>
@@ -125,30 +122,28 @@
 <!-- body -->
 <div class="section" id="typoscript">
 <span id="configuration-typoscript"></span><span id="index-0"></span><h1>Typoscript<a class="headerlink" href="#typoscript" title="Permalink to this headline">¶</a></h1>
-<dl class="confval">
-<dt id="confval-bootstrapGrid">
-<code class="descname">bootstrapGrid</code><a class="headerlink" href="#confval-bootstrapGrid" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name"/>
-<col class="field-body"/>
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Default:</th><td class="field-body">true</td>
-</tr>
-</tbody>
-</table>
-<p>If <code class="code php docutils literal notranslate"><span class="pre">true</span></code>, the bootstrap grid css is included for basic grid styling.</p>
-<p>Example:</p>
-<div class="highlight-typoscript notranslate"><div class="highlight"><pre><span></span><span class="nb">plugin</span><span class="p">.</span>tx_jar_columnrow<span class="p">.</span>settings <span class="ss">{</span>
-   bootstrapGrid <span class="o">=</span> true
+<div class="line-block">
+<div class="line">The registered content element has to implement the DataflowProcessor.</div>
+<div class="line">Example for the CType <code class="code docutils literal notranslate"><span class="pre">html</span></code></div>
+<div class="line"><br/></div>
+</div>
+<div class="line-block">
+<div class="line"><code class="code docutils literal notranslate"><span class="pre">Jar\Dataflow\DataProcessing\DataflowProcessor</span></code></div>
+<div class="line"><br/></div>
+<div class="line"><strong>Parameters</strong></div>
+</div>
+<ul class="simple">
+<li><strong>as</strong> <em>(string)</em>: Index of the processed data.</li>
+<li><strong>debug</strong> <em>(bool)</em>: Frontent debugging of all items.</li>
+</ul>
+<div class="highlight-typoscript notranslate"><div class="highlight"><pre><span></span><span class="nb">tt_content</span><span class="p">.</span>html<span class="p">.</span>DataProcessing <span class="ss">{</span>
+   <span class="mi">10</span> <span class="o">=</span> Jar<span class="ss">\</span>Dataflow<span class="ss">\</span>DataProcessing<span class="ss">\</span>DataflowProcessor
+   <span class="mi">10</span> <span class="ss">{</span>
+      as <span class="o">=</span> items
+      debug <span class="o">=</span> <span class="mi">0</span>
+   <span class="ss">}</span>
 <span class="ss">}</span>
 </pre></div>
-</div>
-</dd></dl>
-<div class="section" id="change-via-the-constant-editor">
-<h2>Change via the Constant Editor<a class="headerlink" href="#change-via-the-constant-editor" title="Permalink to this headline">¶</a></h2>
-<img alt="Configuration/../Images/Configuration/constants_grid.png" src="Configuration/../Images/Configuration/constants_grid.png"/>
 </div>
 </div>
 <!-- /body -->
@@ -181,7 +176,7 @@
 <div class="frame-container">
 <div class="frame-inner">
 <div class="footer-additional">
-<p class="text-center">Last rendered: Apr 22, 2022 12:26</p>
+<p class="text-center">Last rendered: Apr 22, 2022 12:59</p>
 <p class="text-center">
 <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
                             TYPO3 Theme 4.6.2

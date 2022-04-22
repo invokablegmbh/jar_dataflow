@@ -30,12 +30,6 @@
          "Configuration/TCAOverride.html#confval-array$foreignConstraints", 
          "-"
       ], 
-      "bootstrapGrid": [
-         "jar_dataflow", 
-         "0.0", 
-         "Configuration/Typoscript.html#confval-bootstrapGrid", 
-         "-"
-      ], 
       "jar.bgcolors": [
          "jar_dataflow", 
          "0.0", 

@@ -6,11 +6,7 @@ For developers
 
 For developers
 ----------
-./Documentation/Configuration/Typoscript.rst:25: WARNING: Title underline too short.
-
-Change via the Constant Editor
-""""""""""""""
-./Documentation/Configuration/Typoscript.rst:28: WARNING: image file not readable: Configuration/../Images/Configuration/constants_grid.png
+./Documentation/Configuration/Typoscript.rst:16: WARNING: Line block ends without a blank line.
 ./Documentation/Index.rst:48: WARNING: toctree contains reference to nonexisting document u'Introduction/Index'
 ./Documentation/Index.rst:60: WARNING: toctree contains reference to nonexisting document u'Sitemap'
 ./Documentation/Index.rst:60: WARNING: toctree contains reference to nonexisting document u'genindex'
@@ -32,4 +28,3 @@ Installation
 ./Documentation/Configuration/TCAOverride.rst:30: WARNING: php:obj reference target not found: array
 ./Documentation/Configuration/TCAOverride.rst:30: WARNING: php:obj reference target not found: array
 ./Documentation/Configuration/TCAOverride.rst:30: WARNING: php:obj reference target not found: array
-./Documentation/Configuration/Typoscript.rst:: WARNING: 'class' reference target not found: bool

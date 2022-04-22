@@ -8,21 +8,22 @@
 Typoscript
 =====================
 
-.. confval:: bootstrapGrid
+| The registered content element has to implement the DataflowProcessor.
+| Example for the CType `html`
+|
 
-   :type: bool
-   :Default: true
+| `Jar\Dataflow\DataProcessing\DataflowProcessor`
+| 
+| **Parameters**
+* **as** *(string)*: Index of the processed data.
+* **debug** *(bool)*: Frontent debugging of all items.
 
-   If :php:`true`, the bootstrap grid css is included for basic grid styling.
+.. code-block:: typoscript
 
-   Example::
-
-      plugin.tx_jar_columnrow.settings {
-         bootstrapGrid = true
+   tt_content.html.DataProcessing {
+      10 = Jar\Dataflow\DataProcessing\DataflowProcessor
+      10 {
+         as = items
+         debug = 0
       }
-
-Change via the Constant Editor
-""""""""""""""
-
-.. image:: ../Images/Configuration/constants_grid.png
-
+   }
