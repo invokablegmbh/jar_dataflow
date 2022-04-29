@@ -22,7 +22,7 @@ JAR Dataflow
    Add dataflow to any content element to get all items of any table with constraints of your choosing.
 
 :Authors:
-   Julian Lichte, Maurice Möllmer
+   Julian Lichte, Maurice Möllmer 
 
 :Email:
    info@invokable.gmbh
