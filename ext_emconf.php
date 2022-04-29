@@ -14,7 +14,7 @@ $EM_CONF['jar_dataflow'] = array(
 	'clearCacheOnLoad' => 0,
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '10.4.0',
+			'typo3' => '10.4.99',
 			'php' => '7.4.0-7.4.999',
 		),
 		'conflicts' => array(
