@@ -58,7 +58,7 @@ For developers
    ]);
 
 |
-| The userFunc can be used to add custom contraints for the crawled items.
+| The userFunc can be used to add custom contraints for the crawled items. 
 | E.g. all items with the uid greater 1330 and less than 1432.
 | 
 
