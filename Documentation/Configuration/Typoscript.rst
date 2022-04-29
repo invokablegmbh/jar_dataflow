@@ -16,7 +16,6 @@ Typoscript
 | 
 | **Parameters**
 * **as** *(string)*: Index of the processed data.
-* **debug** *(bool)*: Frontent debugging of all items.
 
 .. code-block:: typoscript
 
@@ -24,6 +23,5 @@ Typoscript
       10 = Jar\Dataflow\DataProcessing\DataflowProcessor
       10 {
          as = items
-         debug = 0
       }
    }

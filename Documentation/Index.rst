@@ -25,7 +25,7 @@ JAR Dataflow
    Julian Lichte, Maurice Möllmer
 
 :Email:
-   typo3jardataflow@jcdn.de
+   info@invokable.gmbh
 
 :License:
    `Creative Commons BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__ 
@@ -37,13 +37,15 @@ a GNU/GPL CMS/Framework available from `typo3.org <https://typo3.org/>`_ .
 
 **Extension Manual**
 
-This documentation is for the TYPO3 extension JAR Dataflow.
-If you find an error or something is missing, please:
-`Report a Problem <https://git.jar.media/composer-modules/typo3/jar-dataflow/-/issues/new>`__
+| This documentation is for the TYPO3 extension JAR Dataflow.
+| If you find an error or something is missing, please: `Report a Problem <https://github.com/invokablegmbh/jar_dataflow/issues>`__
+| 
 
 ..   Note for editors:
 ..   temporarily removed from menu:
 ..   Introduction/Index
+
+**Table of Contents**
 
 .. toctree::
    :maxdepth: 1
