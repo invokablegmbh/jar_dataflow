@@ -23,7 +23,8 @@
 	        "role": "Developer"
 	    }
 	],
-    "require": {        
+    "require": {
+        "typo3/cms-core": "^10.4",
         "jar/jar_utilities": "^v1.0"
     },
     "autoload": {
