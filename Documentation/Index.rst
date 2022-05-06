@@ -64,7 +64,6 @@ a GNU/GPL CMS/Framework available from `typo3.org <https://typo3.org/>`_ .
 
    Sitemap
    genindex
-   About
    Targets
 
 ---------------------------------------------------------------------------------
