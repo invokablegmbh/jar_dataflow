@@ -9,7 +9,7 @@ Dataflow
    en
 
 :Description:
-    This extension provides a new content object to render pug templates.
+    Add dataflow to any content element to get all items of any table with constraints of your choosing.
 
 :Authors:
    Julian Lichte, Maurice Möllmer
