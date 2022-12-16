@@ -83,7 +83,7 @@ class DataflowUtility
 			]
 		];
 
-		if(!is_array($GLOBALS['TCA']['tt_content']['types'][$cType]['columnsOverrides'])) {
+		if(!(is_array($GLOBALS['TCA']['tt_content']['types'][$cType]['columnsOverrides'] ?? false))) {
 			$GLOBALS['TCA']['tt_content']['types'][$cType]['columnsOverrides'] = [];
 		}
 
@@ -126,10 +126,10 @@ class DataflowUtility
 			$containsDisallowedEvals = Count(array_intersect($disallowedEvals,  GeneralUtility::trimExplode(',', strtolower($definition['config']['eval'] ?? ''))));
 			if (
 				!$containsDisallowedEvals &&
-				!$definition['exclude'] &&
+				!($definition['exclude'] ?? false) &&
 				!in_array($column, $systemColumns) &&
 				(!empty($definition['config']['type']) && in_array($definition['config']['type'], $sortableConfigTypes)) &&
-				!in_array($definition['config']['renderType'], $disallowedRenderTypes)
+				!in_array($definition['config']['renderType'] ?? [], $disallowedRenderTypes)
 			) {
 				// when whitelist/foreignSortableColumns is set, just use these
 				if (!empty($foreignSortableColumns) && !in_array($column, $foreignSortableColumns)) {

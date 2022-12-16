@@ -41,9 +41,9 @@ class PreviewRendererHook implements PageLayoutViewDrawFooterHookInterface
         &$info,
         array &$row
     ) {
-        if ($GLOBALS['TCA']['tt_content']['types'][$row['CType']]['dataflowIsActive']) {
+        if ($GLOBALS['TCA']['tt_content']['types'][$row['CType']]['dataflowIsActive'] ?? false) {
 
-            $foreignTable = $GLOBALS['TCA']['tt_content']['types'][$row['CType']]['columnsOverrides']['dataflow_items']['config']['allowed'];
+            $foreignTable = $GLOBALS['TCA']['tt_content']['types'][$row['CType']]['columnsOverrides']['dataflow_items']['config']['allowed'] ?? '';
             if (empty($foreignTable)) {
                 return;
             }
