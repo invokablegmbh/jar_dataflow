@@ -29,6 +29,8 @@ defined('TYPO3_MODE') or die('Access denied.');
                 'maxitems' => '100',
                 'autoSizeMax' => '5',
                 'internal_type' => 'db',
+                // dummy value
+                'allowed' => 'tt_content',
             ],
             'displayCond' => 'FIELD:dataflow_source:=:1',
         ],
