@@ -71,7 +71,7 @@ class DataflowProcessor implements DataProcessorInterface
             $recordContentObjectRenderer = GeneralUtility::makeInstance(ContentObjectRenderer::class);
             // if complete Processing is active, forward the whole resullist. 
             // Otherwise process each item separatly
-            if ((bool) $settings['completeProcessing']) {
+            if ((bool) ($settings['completeProcessing'] ?? false)) {
                 $result = $contentDataProcessor->process(
                     $cObj,
                     $processorConfiguration,
