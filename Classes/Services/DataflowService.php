@@ -154,7 +154,7 @@ class DataflowService
 		$queryBuilder = $connectionPool->getQueryBuilderForTable($this->table);
 
 		$constraints = $this->contraints;
-
+		
 		$query = $queryBuilder
 			->select('*')
 			->from($this->table);
@@ -378,6 +378,7 @@ class DataflowService
 	 */
 	public function setPropertiesByConfigurationArray(array $configuration): self
 	{
+		$this->resetAllProperties();
 
 		if (!empty($configuration['source'])) {
 			$this->setSourceMode((int) $configuration['source']);
@@ -397,7 +398,7 @@ class DataflowService
 
 		if (!empty($configuration['items_per_page'])) {
 			$this->setItemsPerPage((int) $configuration['items_per_page']);
-		}
+		}	
 
 		if (!empty($configuration['sysdirs'])) {
 			$this->setSysdirs(GeneralUtility::trimExplode(',', $configuration['sysdirs'], true));
@@ -417,7 +418,7 @@ class DataflowService
 
 		if (!empty($configuration['orderby_field'])) {
 			$this->setOrderByField($configuration['orderby_field']);
-		}
+		} 
 
 		if (!empty($configuration['table'])) {
 			$this->setTable($configuration['table']);
@@ -425,7 +426,7 @@ class DataflowService
 
 		if (!empty($configuration['constraints'])) {
 			$this->setContraints($configuration['constraints']);
-		}
+		}		
 
 		if (!empty($configuration['reflection'])) {
 			$this->setReflectionConfiguration($configuration['reflection']);
@@ -436,6 +437,28 @@ class DataflowService
 		}
 
 		return $this;
+	}
+
+	/**
+	 * Set all properties to default
+	 *
+	 * @return void
+	 */
+	private function resetAllProperties() {
+		$this->setSourceMode(0);
+		$this->setSelectedItems([]);
+		$this->setRecursive(0);
+		$this->setMaxItems(0);
+		$this->setItemsPerPage(0);
+		$this->setSysdirs([]);
+		$this->setCategories([]);
+		$this->setCategoryAndOr(0);
+		$this->setOrderBy(QueryInterface::ORDER_ASCENDING);
+		$this->setOrderByField('uid');
+		$this->setTable('');
+		$this->setContraints([]);
+		$this->setReflectionConfiguration([]);
+		$this->setDebug(false);
 	}
 
 	/**
@@ -697,7 +720,11 @@ class DataflowService
 	 */
 	public function setContraints(array $contraints)
 	{
-		$this->contraints = DataflowUtility::generateConstraintsFromUserFuncList($this->table, $contraints);
+		if(!count($contraints)) {
+			$this->contraints = $contraints;
+		} else {
+			$this->contraints = DataflowUtility::generateConstraintsFromUserFuncList($this->table, $contraints);
+		}
 
 		return $this;
 	}
