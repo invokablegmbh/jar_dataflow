@@ -92,7 +92,7 @@ class DataflowUtility
 		// helper flag for post-handling like backend previews
 		$GLOBALS['TCA']['tt_content']['types'][$cType]['dataflowIsActive'] = true;
 
-		// Activate Categorization for foreign Tables		
+		// Activate Categorization for foreign Tables
 		if($foreignTable !== 'pages' && $foreignTable !== 'tt_content') {
 			\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::makeCategorizable('jar_dataflow', $foreignTable);
 		}
