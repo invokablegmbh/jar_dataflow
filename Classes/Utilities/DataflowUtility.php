@@ -160,7 +160,7 @@ class DataflowUtility
 		foreach ($funcList as $funcListEntry) {			
 			if (is_string($funcListEntry)) {
 				// Fallback if the Condition directly written as string
-				$constaints += $funcListEntry;
+				$constaints[] = $funcListEntry;
 			} else if (!empty($funcListEntry['userFunc'])) {
 
 				$params = $funcListEntry['parameters'];

@@ -32,6 +32,10 @@ Basic
 
    \Jar\Dataflow\Utilities\DataflowUtility::addDataflowFieldsToContentElement('html', 'tx_j77template_utility_jobs', [
        'enablePagination' => true,
+       // you could write contraints directly as string, be careful when using dynamic values! No Escaping will be used here!
+       'foreignConstraints' => [
+            '`tx_j77template_utility_jobs`.`jobtype` = 12345'        
+       ]
    ]);
 
 .. _developers:
