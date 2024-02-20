@@ -1,10 +1,10 @@
 <?php
 
 
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
 call_user_func(function () {
-    if (TYPO3_MODE === 'BE') {
+    if (TYPO3 === 'BE') {
         $GLOBALS['TBE_STYLES']['skins']['jar_dataflow'] = [
             'name' => 'jar_dataflow',
             'stylesheetDirectories' => [

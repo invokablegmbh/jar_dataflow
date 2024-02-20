@@ -83,7 +83,7 @@ class DataflowUtility
 			]
 		];
 
-		if(!(is_array($GLOBALS['TCA']['tt_content']['types'][$cType]['columnsOverrides'] ?? false))) {
+		if(!isset($GLOBALS['TCA']['tt_content']['types'][$cType]['columnsOverrides'])) {
 			$GLOBALS['TCA']['tt_content']['types'][$cType]['columnsOverrides'] = [];
 		}
 
@@ -93,8 +93,17 @@ class DataflowUtility
 		$GLOBALS['TCA']['tt_content']['types'][$cType]['dataflowIsActive'] = true;
 
 		// Activate Categorization for foreign Tables
-		if($foreignTable !== 'pages' && $foreignTable !== 'tt_content') {
-			\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::makeCategorizable('jar_dataflow', $foreignTable);
+		if(!isset($GLOBALS['TCA'][$foreignTable]['columns']['categories'])) {
+			$GLOBALS['TCA'][$foreignTable]['columns']['categories'] = [
+				'config' => [
+				   'type' => 'category'
+				]
+			 ];
+			 
+			 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+				$foreignTable,
+				'categories'
+			 );
 		}
 	}
 

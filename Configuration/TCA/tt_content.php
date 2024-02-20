@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') or die('Access denied.');
+defined('TYPO3') or die('Access denied.');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
     'tt_content',
@@ -28,9 +28,8 @@ defined('TYPO3_MODE') or die('Access denied.');
                 'size' => '2',
                 'maxitems' => '100',
                 'autoSizeMax' => '5',
-                'internal_type' => 'db',
-                // dummy value
                 'allowed' => 'tt_content',
+                'internal_type' => 'db',
             ],
             'displayCond' => 'FIELD:dataflow_source:=:1',
         ],
