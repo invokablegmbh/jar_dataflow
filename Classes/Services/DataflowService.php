@@ -110,7 +110,7 @@ class DataflowService
 	 * Flag for Debug Mode
 	 * @var bool
 	 */
-	private bool $debug = false;
+	private bool $debugging = false;
 
 	/**
 	 * Configuration for final reflection
@@ -251,7 +251,7 @@ class DataflowService
 			$items = $sortedItems;
 		}
 
-		if ($this->getDebug()) {
+		if ($this->getDebugging()) {
 			DebuggerUtility::var_dump($query->getSQL(), 'Item Query', 1, true, false);
 		}
 
@@ -434,7 +434,7 @@ class DataflowService
 		}
 
 		if (!empty($configuration['debug'])) {
-			$this->setDebug((bool) $configuration['debug']);
+			$this->setDebugging((bool) $configuration['debug']);
 		}
 
 		return $this;
@@ -459,7 +459,7 @@ class DataflowService
 		$this->setTable('');
 		$this->setContraints([]);
 		$this->setReflectionConfiguration([]);
-		$this->setDebug(false);
+		$this->setDebugging(false);
 	}
 
 	/**
@@ -783,9 +783,9 @@ class DataflowService
 	 *
 	 * @return  bool
 	 */
-	public function getDebug()
+	public function getDebugging()
 	{
-		return $this->debug;
+		return $this->debugging;
 	}
 
 	/**
@@ -795,9 +795,9 @@ class DataflowService
 	 *
 	 * @return  self
 	 */
-	public function setDebug(bool $debug)
+	public function setDebugging(bool $debugging)
 	{
-		$this->debug = $debug;
+		$this->debugging = $debugging;
 
 		return $this;
 	}
