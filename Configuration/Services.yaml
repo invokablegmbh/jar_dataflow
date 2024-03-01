@@ -1,11 +1,21 @@
 services:
-   _defaults:
-      autowire: true
-      autoconfigure: true
-      public: false
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
 
-   Jar\Dataflow\:
-      resource: '../Classes/*'
+  Jar\Dataflow\:
+    resource: '../Classes/*'
 
-   Jar\Dataflow\Services\DataflowService:
-      public: true
+  Jar\Dataflow\Services\DataflowService:
+    public: true
+
+  Jar\Dataflow\Event\PageContentPreviewRenderingDataflowEvent:
+    tags:
+    - name: event.listener
+      identifier: 'jar-dataflow-preview-rendering-ctype-footer'
+
+  Jar\Dataflow\Event\ModifyDatabaseQueryForRecordListingDataflowEvent:
+    tags:
+    - name: event.listener
+      identifier: 'jar-dataflow-modify-db-record-listing'

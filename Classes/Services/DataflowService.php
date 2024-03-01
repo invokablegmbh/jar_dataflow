@@ -165,7 +165,7 @@ class DataflowService
 		if ($languageConfig !== null) {
 			$languageField = $languageConfig['languageField'];
 			$currentLanguageUid = $this->currentLanguageId();
-			$constraints[] = $queryBuilder->expr()->orX(
+			$constraints[] = $queryBuilder->expr()->or(
 				$queryBuilder->expr()->eq($languageField, $currentLanguageUid),
 				$queryBuilder->expr()->eq($languageField, -1)
 			);
@@ -207,8 +207,8 @@ class DataflowService
 					->from('sys_category_record_mm')
 					->andWhere(...$categoryConstraints)
 					->groupBy('uid_foreign')
-					->execute()
-					->fetchAll();
+					->executeQuery()
+					->fetchAllAssociative();
 
 				// when the categories are AND-linked filter all elements where the amound doesn't match the amount of selected categories
 				if ($this->categoryAndOr === 1) {
@@ -238,7 +238,7 @@ class DataflowService
 
 		$this->initPagination($query);
 
-		$items = $query->execute()->fetchAll();
+		$items = $query->executeQuery()->fetchAllAssociative();
 
 		if ($this->sourceMode === 1) {
 			// by manual selection, sort the results to backend order
@@ -251,7 +251,7 @@ class DataflowService
 			$items = $sortedItems;
 		}
 
-		if ($this->debug) {
+		if ($this->getDebug()) {
 			DebuggerUtility::var_dump($query->getSQL(), 'Item Query', 1, true, false);
 		}
 
@@ -273,7 +273,8 @@ class DataflowService
 			$fullRowCount = $countQuery->select('uid')->execute()->rowCount();
 			$pageCount = (int) ceil($fullRowCount / $this->itemsPerPage);
 
-			$params = GeneralUtility::_GP('dataflow_pagination');
+			$queryParams = $GLOBALS['TYPO3_REQUEST']->getQueryParams();
+			$params = $queryParams['dataflow_pagination'] ?? [];
 
 			if (
 				$this->paginationPageIndex === null &&
@@ -337,7 +338,7 @@ class DataflowService
 	/** @return int  */
 	private function currentPageUid(): int
 	{
-		return (int) $GLOBALS['TSFE']->id;
+		return $GLOBALS['TYPO3_REQUEST']->getAttribute('routing')->getPageId();
 	}
 
 
